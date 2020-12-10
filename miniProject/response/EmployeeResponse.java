@@ -1,0 +1,60 @@
+package com.miniProject.response;
+import java.util.Set;
+
+import com.miniProject.models.Role;
+
+public class EmployeeResponse {
+
+	private String id;
+	private String username;
+	private String email;
+	private Set<Role> roles;
+	
+	public EmployeeResponse() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public EmployeeResponse(String id, String username, String email, Set<Role> role) {
+		this.id = id;
+		this.username = username;
+		this.email = email;
+		this.roles = role;
+	}
+	
+	public EmployeeResponse(String id, String username, String email) {
+		this.id = id;
+		this.username = username;
+		this.email = email;
+	}
+
+	
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getUsername() {
+		return username;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
+	public Set<Role> getRoles() {
+		return roles;
+	}
+}
+
